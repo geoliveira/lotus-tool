@@ -18,15 +18,7 @@ public class teste extends Plugin {
         mProjectExplorer.getSelectedProject().addComponent(newPC);
     };
 
-    @Override
-    public void onStart(ExtensionManager extensionManager) throws Exception {
-        mProjectExplorer = (ProjectExplorer) extensionManager.get(ProjectExplorer.class);
-        mUserInterface = extensionManager.get(UserInterface.class);
-        mUserInterface.getMainMenu().newItem("Help/teste")
-                .setWeight(Integer.MAX_VALUE)
-                .setAction(mAbout).create();
 
-    }
 
 
     public Component ParallelComposition(List<Component> Components){

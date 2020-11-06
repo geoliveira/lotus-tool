@@ -102,13 +102,5 @@ public class teste2 extends Plugin {
     }
 
 
-    @Override
-    public void onStart(ExtensionManager extensionManager) throws Exception {
-        mProjectExplorer = (ProjectExplorer) extensionManager.get(ProjectExplorer.class);
-        mUserInterface = extensionManager.get(UserInterface.class);
-        mUserInterface.getMainMenu().newItem("Help/teste")
-                .setWeight(Integer.MAX_VALUE)
-                .setAction(mAbout).create();
-
-    }
+ 
 }
