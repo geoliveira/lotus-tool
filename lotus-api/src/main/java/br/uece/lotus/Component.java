@@ -224,6 +224,7 @@ public class Component {
         for (Listener l : mListeners) {
             l.onStateRemoved(this, state);
         }
+        
         if (state.isInitial()) {
             if (!mStates.isEmpty() ) {
                 setInitialState(mStates.get(0));
