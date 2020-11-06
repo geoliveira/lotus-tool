@@ -110,19 +110,14 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
 
 ### Building
 
-Use the maven to build the project:
-
-$ mvn clean install
-
-The distributable application will be generated at subdir target/jfx/
-
-### Running the app
-
-Go to lotus-zip/target
-Unzip the lotus-tools zip folder
-And then run the following command:
+Go to the directory where project is.
+For Windows, execute 
 ```
-java -jar lotus-tool/lotus-app*
+buildWindows.bat
+```
+For Ubuntu, execute
+```
+$ ./buildLinux.sh
 ```
 	
 ### More Information
